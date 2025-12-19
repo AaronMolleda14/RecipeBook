@@ -9,7 +9,7 @@ type Props = {
 
 export default async function EditRecipePage({ params }: Props) {
   const { slug } = await params;
-  const res = await fetch(`/api/recipes/${slug}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/recipes/${slug}`, {
     cache: 'no-store',
   });
 
