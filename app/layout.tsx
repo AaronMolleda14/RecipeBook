@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Recetario",
   description: "Descubre recetas deliciosas y fáciles de preparar en casa, con instrucciones paso a paso.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
