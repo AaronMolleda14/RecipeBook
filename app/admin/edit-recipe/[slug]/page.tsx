@@ -1,3 +1,4 @@
+// app/admin/edit-recipe/[slug]/page.tsx
 import RecipeForm from '@/components/RecipeForm';
 
 type Props = {
@@ -8,7 +9,7 @@ type Props = {
 
 export default async function EditRecipePage({ params }: Props) {
   const { slug } = await params;
-  const res = await fetch(`http://localhost:3000/api/recipes/${slug}`, {
+  const res = await fetch(`/api/recipes/${slug}`, {
     cache: 'no-store',
   });
 
